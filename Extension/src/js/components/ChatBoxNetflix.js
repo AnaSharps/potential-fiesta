@@ -7,10 +7,11 @@ import { MdLastPage, MdFirstPage } from 'react-icons/md';
 import { GiphyFetch } from '@giphy/js-fetch-api';
 import Message from './MessageNetflix';
 import SendMessageForm from './SendMessageForm';
-import LoginIllustration from './LoginIllustration';
+import LoginIllustration from './LoginIllustrationPopCorn';
 import './chatbox.css';
 import './chatboxNetflix.css';
 import VoiceChatter from './VoiceChatter';
+import Header from './Header';
 
 function typingStatusFromUsers(users) {
   if (users.length === 0) return '';
@@ -433,6 +434,7 @@ class ChatBox extends React.Component {
         <div id="psychick" className={`${currentSession ? '' : 'session-form-enabled'}`}>
           {!currentSession && (
           <>
+            <Header />
             <LoginIllustration />
             <div className="card-psychic">
               <form
@@ -471,7 +473,7 @@ class ChatBox extends React.Component {
                 value={joinSessionInput}
                 style={{ marginBottom: '8px' }}
               />
-              <button type="button" className="session-button" onClick={(e) => this.joinSessionHandler(e)}>Join Session</button>
+              <button type="button" className="outlined-button" onClick={(e) => this.joinSessionHandler(e)}>Join Session</button>
             </div>
           </>
           )}
