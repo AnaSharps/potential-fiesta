@@ -43,7 +43,8 @@ Load the extension from build directory into chrome.
 
 ## Authors
 
-* **Jayesh Narwaria** - *Initial work* - [jaynarw](https://github.com/jaynarw)
+* **Jayesh Narwaria** - [jaynarw](https://github.com/jaynarw)
+* **Prashansa Dadu** - [AnaSharps](https://github.com/AnaSharps)
 
 See also the list of [contributors](https://github.com/jaynarw/psychic-giggle/contributors) who participated in this project.
 
